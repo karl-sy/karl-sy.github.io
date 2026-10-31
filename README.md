@@ -1,17 +1,17 @@
-# 原能矩阵 · AI 回忆录 官网
+# 原能矩阵 · 老回忆 官网
 
-杭州原能矩阵技术有限公司官方网站 —— 用 AI 为老年人撰写回忆录。
+杭州原能矩阵技术有限公司官方网站 —— 为老年人留存一生的故事。
 
 ## 目录结构
 
 ```
 website/
-├── index.html      # 首页：定位 + 核心服务 + 服务对象
-├── about.html      # 关于我们：公司简介、使命、技术、原则
-├── service.html    # 服务流程：四步成书 + 常见疑问
+├── index.html      # 首页：定位 + 核心服务 + 服务对象 + 承诺
+├── about.html      # 关于我们：公司简介、使命、原则
+├── service.html    # 服务流程：七步成书 + 常见疑问
 ├── contact.html    # 联系我们
 ├── css/main.css    # 全站样式（响应式，移动端适配）
-└── images/         # 图片资源（favicon 等）
+└── images/         # 图片资源（hero、family 配图）
 ```
 
 ## 本地预览
@@ -41,4 +41,4 @@ python3 -m http.server 8000
 - 自定义域名（约 ¥70/年，`.com`/`.cn`）→ CNAME 指向 Pages，免费 HTTPS
 - 咨询表单 → Cloudflare Workers 免费额度（10 万次请求/天）
 - 真实案例展示 → 替换 `index.html` 服务对象区块
-- 联系方式 → `contact.html` 中的邮箱目前为占位符，请替换为真实邮箱
+- 联系方式 → `contact.html` 中的邮箱与电话，请按需核对更新
