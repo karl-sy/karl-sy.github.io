@@ -200,6 +200,11 @@ a:hover { text-decoration: underline; }
 
 /* 定价说明与收尾 CTA */
 .price-note { text-align: center; color: var(--ink-soft); font-size: 14.5px; margin-top: 24px; }
+
+/* 区块配图 */
+.figure { max-width: 900px; margin: 28px auto 0; }
+.figure.narrow { max-width: 640px; }
+.figure img { width: 100%; height: auto; display: block; border-radius: var(--radius); box-shadow: var(--shadow); }
 .cta-title { font-size: clamp(24px, 3.6vw, 34px); letter-spacing: 2px; }
 .cta-sub { color: var(--ink-soft); font-size: 16px; margin-top: 10px; }
 
