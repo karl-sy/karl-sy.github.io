@@ -253,12 +253,25 @@ a:hover { text-decoration: underline; }
 .site-footer a { color: rgba(250, 246, 240, .9); }
 
 /* ---------- 成书实物页内覆字 ---------- */
-.book-figure { position: relative; }
+.book-figure { position: relative; max-width: 760px; }
 .book-page-text {
   position: absolute; right: 20%; top: 46%; margin: 0;
   writing-mode: vertical-rl; text-orientation: mixed;
   font-family: "STKaiti", "KaiTi", "Songti SC", serif;
-  font-size: 13px; line-height: 1.1; letter-spacing: 0.8px;
+  font-size: 15px; line-height: 1.1; letter-spacing: 0.8px;
+  color: var(--ink-soft); opacity: .85;
+  white-space: nowrap; pointer-events: none;
+}
+
+/* 服务卡书页覆字（精装成书交付） */
+.card-book { position: relative; }
+.card-book .card-img-wrap { position: relative; }
+.card-book .card-book-text {
+  position: absolute; left: 50%; top: 38%;
+  transform: translateX(-50%);
+  writing-mode: vertical-rl; text-orientation: mixed;
+  font-family: "STKaiti", "KaiTi", "Songti SC", serif;
+  font-size: 11px; line-height: 1.15; letter-spacing: 1px;
   color: var(--ink-soft); opacity: .85;
   white-space: nowrap; pointer-events: none;
 }
@@ -272,7 +285,8 @@ a:hover { text-decoration: underline; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-image { max-width: 70%; margin: 0 auto; }
   .section { padding: 56px 0; }
-  .book-page-text { font-size: 10.5px; right: 23%; top: 48%; opacity: .8; }
+  .book-page-text { font-size: 11.5px; right: 20%; top: 46%; opacity: .8; }
+  .card-book .card-book-text { font-size: 9px; top: 36%; }
   .team-feature { flex-direction: column; align-items: stretch; }
   .team-feature .team-photo { width: 100%; height: auto; }
 }
