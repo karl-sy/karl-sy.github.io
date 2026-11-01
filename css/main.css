@@ -226,6 +226,17 @@ a:hover { text-decoration: underline; }
 .site-footer .brand { color: #fff; justify-content: center; margin-bottom: 14px; }
 .site-footer a { color: rgba(250, 246, 240, .9); }
 
+/* ---------- 成书实物页内覆字 ---------- */
+.book-figure { position: relative; }
+.book-page-text {
+  position: absolute; right: 20%; top: 46%; margin: 0;
+  writing-mode: vertical-rl; text-orientation: mixed;
+  font-family: "STKaiti", "KaiTi", "Songti SC", serif;
+  font-size: 13px; line-height: 1.1; letter-spacing: 0.8px;
+  color: var(--ink-soft); opacity: .85;
+  white-space: nowrap; pointer-events: none;
+}
+
 /* ---------- 移动端 ---------- */
 @media (max-width: 860px) {
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
@@ -235,6 +246,7 @@ a:hover { text-decoration: underline; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-image { max-width: 70%; margin: 0 auto; }
   .section { padding: 56px 0; }
+  .book-page-text { font-size: 10.5px; right: 23%; top: 48%; opacity: .8; }
 }
 @media (max-width: 560px) {
   .nav { height: auto; flex-direction: column; gap: 10px; padding: 12px 0; }
